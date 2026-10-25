@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true" />
+    <uses-feature android:name="android.software.companion_device_setup" android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+    <application android:name=".A20Application" android:label="@string/app_name"
+        android:icon="@drawable/ic_a20" android:roundIcon="@drawable/ic_a20"
+        android:theme="@style/Theme.A20" android:allowBackup="false"
+        android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" android:exported="true">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+            <intent-filter><action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+        </activity>
+        <activity android:name=".ModeShortcutActivity" android:exported="true"
+            android:theme="@style/Theme.A20.Shortcut" android:taskAffinity=""
+            android:excludeFromRecents="true" android:noHistory="true" />
+        <service android:name=".RepairService" android:exported="false" android:foregroundServiceType="connectedDevice" />
+        <service android:name=".ActionService" android:exported="false" android:foregroundServiceType="connectedDevice" />
+        <service android:name=".A20CompanionService" android:exported="true" android:permission="android.permission.BIND_COMPANION_DEVICE_SERVICE">
+            <intent-filter><action android:name="android.companion.CompanionDeviceService" /></intent-filter>
+        </service>
+        <service android:name=".ModeTileService" android:label="@string/tile_name" android:icon="@drawable/ic_moon"
+            android:exported="true" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter><action android:name="android.service.quicksettings.action.QS_TILE" /></intent-filter>
+            <meta-data android:name="android.service.quicksettings.ACTIVE_TILE" android:value="false" />
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE" android:value="true" />
+        </service>
+        <receiver android:name=".widgets.BatteriesWidget" android:exported="false" android:label="@string/widget_batteries_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_batteries_info"/>
+        </receiver>
+        <receiver android:name=".widgets.ControlsWidget" android:exported="false" android:label="@string/widget_controls_name">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_controls_info"/>
+        </receiver>
+        <!-- Intentional local automation API: explicit opt-in and fixed action allowlist. -->
+        <receiver android:name=".automation.AutomationReceiver" android:exported="true" tools:ignore="ExportedReceiver" />
+    </application>
+</manifest>

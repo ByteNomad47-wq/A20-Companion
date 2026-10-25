@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="bluetooth_mode" android:enabled="true"
+        android:icon="@drawable/ic_bluetooth"
+        android:shortcutShortLabel="@string/shortcut_bluetooth"
+        android:shortcutLongLabel="@string/shortcut_bluetooth_long">
+        <intent android:action="io.github.bytenomad47.a20.shortcut.BLUETOOTH"
+            android:targetPackage="io.github.bytenomad47.a20"
+            android:targetClass="io.github.bytenomad47.a20.ModeShortcutActivity" />
+    </shortcut>
+    <shortcut android:shortcutId="sleep_mode" android:enabled="true"
+        android:icon="@drawable/ic_shortcut_sleep"
+        android:shortcutShortLabel="@string/shortcut_sleep"
+        android:shortcutLongLabel="@string/shortcut_sleep_long">
+        <intent android:action="io.github.bytenomad47.a20.shortcut.SLEEP"
+            android:targetPackage="io.github.bytenomad47.a20"
+            android:targetClass="io.github.bytenomad47.a20.ModeShortcutActivity" />
+    </shortcut>
+</shortcuts>

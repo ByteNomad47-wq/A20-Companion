@@ -1,0 +1,90 @@
+{
+  "firmware_sha256": "20f5f148be6f346677422679e78a251219a72ac9501ad959a01783fa8439df9f",
+  "checks": 554,
+  "wire_setter": [
+    19,
+    5
+  ],
+  "registered_callback": "0x1412a374",
+  "allowed_raw_levels": [
+    0,
+    65
+  ],
+  "normal_status_effective_volume_body_offset": 78,
+  "actual_stock_thumb_callback_executed": true,
+  "hardware_audio_peer_usage_counters": "explicit models; no physical volume verification",
+  "boundary_cases": [
+    {
+      "requested": 0,
+      "mobile_master": true,
+      "applied": true,
+      "ack_status": 1
+    },
+    {
+      "requested": 30,
+      "mobile_master": true,
+      "applied": true,
+      "ack_status": 1
+    },
+    {
+      "requested": 65,
+      "mobile_master": true,
+      "applied": true,
+      "ack_status": 1
+    },
+    {
+      "requested": 66,
+      "mobile_master": true,
+      "applied": false,
+      "ack_status": 0
+    },
+    {
+      "requested": 127,
+      "mobile_master": true,
+      "applied": false,
+      "ack_status": 0
+    },
+    {
+      "requested": 255,
+      "mobile_master": true,
+      "applied": false,
+      "ack_status": 0
+    },
+    {
+      "requested": 0,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    },
+    {
+      "requested": 30,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    },
+    {
+      "requested": 65,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    },
+    {
+      "requested": 66,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    },
+    {
+      "requested": 127,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    },
+    {
+      "requested": 255,
+      "mobile_master": false,
+      "applied": false,
+      "ack_status": 1
+    }
+  ]
+}

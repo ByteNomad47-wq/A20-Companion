@@ -1,0 +1,1185 @@
+{
+  "ear": "L",
+  "voltage": {
+    "ear": "L",
+    "replyBytes": 28,
+    "cachedBatteryVoltage": 3916,
+    "voltageUnits": "mV interpretation from firmware; cached value, freshness unverified"
+  },
+  "main": {
+    "ear": "L",
+    "replyBytes": 1116,
+    "rawMainCounter": 1,
+    "rawIndex": 1,
+    "error1": 1,
+    "error2": 1,
+    "error3": 0,
+    "normalCount": 0,
+    "recordValid": true,
+    "mainVoltageLimitFaultCounter": 1,
+    "index": 1,
+    "scope": "All20 physical record slots and10 stored time/voltage pairs each. Zero charge-time marks an empty slot. Unused/stale sample slots can remain within nonempty records; stored sample count and time units are not verified. No clearing or charger/protection changes.",
+    "diagnosticFormat": "compact-history-1.13",
+    "historyComplete": true,
+    "storedHistory": [
+      {
+        "slot": 0,
+        "rawChargeTime": 5468139,
+        "recordMarkedEmpty": false,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 7269568,
+            "rawVoltage": 4000
+          },
+          {
+            "slot": 1,
+            "rawTime": 7569014,
+            "rawVoltage": 3992
+          },
+          {
+            "slot": 2,
+            "rawTime": 7868457,
+            "rawVoltage": 3988
+          },
+          {
+            "slot": 3,
+            "rawTime": 8168919,
+            "rawVoltage": 3984
+          },
+          {
+            "slot": 4,
+            "rawTime": 8468301,
+            "rawVoltage": 3976
+          },
+          {
+            "slot": 5,
+            "rawTime": 8768758,
+            "rawVoltage": 3972
+          },
+          {
+            "slot": 6,
+            "rawTime": 9068231,
+            "rawVoltage": 3968
+          },
+          {
+            "slot": 7,
+            "rawTime": 9368611,
+            "rawVoltage": 3964
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 1,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 2,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 3,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 4,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 5,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 6,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 7,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 8,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 9,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 10,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 11,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 12,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 13,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 14,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 15,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 16,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 17,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 18,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      },
+      {
+        "slot": 19,
+        "rawChargeTime": 0,
+        "recordMarkedEmpty": true,
+        "storedSamples": [
+          {
+            "slot": 0,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 1,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 2,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 3,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 4,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 5,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 6,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 7,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 8,
+            "rawTime": 0,
+            "rawVoltage": 0
+          },
+          {
+            "slot": 9,
+            "rawTime": 0,
+            "rawVoltage": 0
+          }
+        ]
+      }
+    ]
+  },
+  "timing": {
+    "ear": "L",
+    "replyBytes": 86,
+    "timingRecordLock": 0,
+    "index": 1,
+    "error1": 0,
+    "error2": 0,
+    "error3": 0,
+    "normalCount": 1,
+    "recordValid": true,
+    "samples": [
+      {
+        "index": 0,
+        "rawTime": 674
+      }
+    ],
+    "scope": "Separate timing record only. Its lock is NOT the main voltage-limit fault counter. Stream quiet boundary; full sample coverage unverified."
+  }
+}

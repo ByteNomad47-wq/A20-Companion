@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">A20 Companion</string>
+    <string name="tile_name">A20 Sleep mode</string>
+    <string name="widget_batteries_name">A20 batteries</string>
+    <string name="widget_controls_name">A20 batteries &amp; modes</string>
+    <string name="widget_batteries_description">Three battery rings. Tap to open Companion.</string>
+    <string name="widget_controls_description">Battery readings, refresh and Bluetooth/Sleep controls.</string>
+    <string name="widget_unknown">—</string>
+    <string name="widget_bluetooth">Bluetooth</string>
+    <string name="widget_sleep">Sleep</string>
+    <string name="widget_refresh">Refresh battery and mode status</string>
+    <string name="shortcut_bluetooth">Bluetooth mode</string>
+    <string name="shortcut_bluetooth_long">Enable Bluetooth mode</string>
+    <string name="shortcut_sleep">Sleep mode</string>
+    <string name="shortcut_sleep_long">Enable Sleep mode</string>
+</resources>

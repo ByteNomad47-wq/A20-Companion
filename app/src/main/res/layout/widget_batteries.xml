@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/background" android:clipToOutline="true" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="8dp" android:background="@drawable/widget_background">
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:baselineAligned="false"><LinearLayout android:id="@+id/widget_left_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_left_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_left_image" android:layout_width="38dp" android:layout_height="38dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_bud" android:importantForAccessibility="no" android:scaleX="-1"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_left_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" android:visibility="gone"/>
+</LinearLayout><LinearLayout android:id="@+id/widget_right_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_right_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_right_image" android:layout_width="38dp" android:layout_height="38dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_bud" android:importantForAccessibility="no"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_right_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" android:visibility="gone"/>
+</LinearLayout><LinearLayout android:id="@+id/widget_case_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_case_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_case_image" android:layout_width="38dp" android:layout_height="38dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_case" android:importantForAccessibility="no"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_case_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" android:visibility="gone"/>
+</LinearLayout></LinearLayout></LinearLayout>

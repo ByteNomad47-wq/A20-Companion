@@ -1,0 +1,19 @@
+{
+  "model": "A6611",
+  "left_firmware": "01.57",
+  "right_firmware": "01.57",
+  "state_body_bytes": 131,
+  "confirmed_sleep_transitions": 4,
+  "confirmed_bluetooth_transitions": 4,
+  "owner_confirmed_switching": true,
+  "sleep_socket_released_between_actions": true,
+  "bluetooth_reconnect_after_sleep": "successful on owned pair",
+  "scope": "One owned original A6611 pair; not a claim of other firmware or single-bud write compatibility",
+  "not_yet_physically_tested": [
+    "Quick Settings toggle",
+    "external automation",
+    "overnight power",
+    "single-bud mode writes"
+  ],
+  "privacy": "Aggregate parsed results only; no names, addresses, serials, personal reports or raw packets"
+}

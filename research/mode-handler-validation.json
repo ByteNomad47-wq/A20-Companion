@@ -1,0 +1,141 @@
+{
+  "firmware_sha256": "20f5f148be6f346677422679e78a251219a72ac9501ad959a01783fa8439df9f",
+  "checks": 64,
+  "wire_setter": [
+    1,
+    169
+  ],
+  "wire_payload_values": {
+    "bluetooth": 0,
+    "sleep": 1
+  },
+  "wire_getter": [
+    1,
+    20
+  ],
+  "actual_stock_thumb_callback_executed": true,
+  "mode_transition_effects": "modeled, not physically emulated",
+  "hardware_and_radio": "not tested",
+  "cases": [
+    {
+      "requested": 0,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 1,
+      "ack_status": 1
+    },
+    {
+      "requested": 0,
+      "ota": true,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 0,
+      "ota": false,
+      "mobile_master": false,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 1
+    },
+    {
+      "requested": 0,
+      "ota": false,
+      "mobile_master": true,
+      "awake": false,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 0,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": true,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 0,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": true,
+      "transition_calls": 1,
+      "ack_status": 1
+    },
+    {
+      "requested": 1,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 1,
+      "ack_status": 1
+    },
+    {
+      "requested": 1,
+      "ota": true,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 1,
+      "ota": false,
+      "mobile_master": false,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 1
+    },
+    {
+      "requested": 1,
+      "ota": false,
+      "mobile_master": true,
+      "awake": false,
+      "sleep_scene": false,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 1,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": true,
+      "playing": false,
+      "transition_calls": 0,
+      "ack_status": 0
+    },
+    {
+      "requested": 1,
+      "ota": false,
+      "mobile_master": true,
+      "awake": true,
+      "sleep_scene": false,
+      "playing": true,
+      "transition_calls": 1,
+      "ack_status": 1
+    }
+  ]
+}

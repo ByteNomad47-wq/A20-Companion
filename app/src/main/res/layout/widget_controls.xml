@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/background" android:clipToOutline="true" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:baselineAligned="false" android:padding="12dp" android:background="@drawable/widget_background">
+ <LinearLayout android:id="@+id/widget_open" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" android:orientation="vertical">
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:orientation="horizontal" android:baselineAligned="false" android:gravity="start|center_vertical">
+   <ImageButton android:id="@+id/widget_refresh" android:layout_width="28dp" android:layout_height="match_parent" android:background="@drawable/widget_button" android:padding="3dp" android:src="@drawable/ic_widget_refresh" android:contentDescription="@string/widget_refresh"/>
+  </LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:baselineAligned="false"><LinearLayout android:id="@+id/widget_left_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_left_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_left_image" android:layout_width="42dp" android:layout_height="42dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_bud" android:importantForAccessibility="no" android:scaleX="-1"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_left_value" android:layout_width="match_parent" android:layout_height="24dp" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" />
+</LinearLayout><LinearLayout android:id="@+id/widget_right_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_right_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_right_image" android:layout_width="42dp" android:layout_height="42dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_bud" android:importantForAccessibility="no"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_right_value" android:layout_width="match_parent" android:layout_height="24dp" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" />
+</LinearLayout><LinearLayout android:id="@+id/widget_case_cell" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+ <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <ImageView android:id="@+id/widget_case_ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:src="@drawable/widget_ring_preview" android:importantForAccessibility="no"/>
+  <ImageView android:id="@+id/widget_case_image" android:layout_width="42dp" android:layout_height="42dp" android:layout_gravity="center" android:scaleType="fitCenter" android:src="@drawable/sleep_a20_case" android:importantForAccessibility="no"/>
+ </FrameLayout>
+ <TextView android:id="@+id/widget_case_value" android:layout_width="match_parent" android:layout_height="24dp" android:gravity="center" android:text="@string/widget_unknown" android:textColor="#EEEAF4" android:textSize="18sp" android:textStyle="bold" android:importantForAccessibility="no" />
+</LinearLayout></LinearLayout>
+
+ </LinearLayout>
+ <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2" android:layout_marginStart="12dp" android:orientation="vertical" android:baselineAligned="false">
+  <Button android:id="@+id/widget_bluetooth" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginBottom="4dp" android:background="@drawable/widget_button" android:backgroundTint="@null" android:text="@string/widget_bluetooth" android:textAllCaps="false" android:textSize="16sp" android:textColor="#EEEAF4" android:padding="0dp" android:minHeight="0dp" android:minWidth="0dp"/>
+  <Button android:id="@+id/widget_sleep" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="4dp" android:background="@drawable/widget_button" android:backgroundTint="@null" android:text="@string/widget_sleep" android:textAllCaps="false" android:textSize="16sp" android:textColor="#EEEAF4" android:padding="0dp" android:minHeight="0dp" android:minWidth="0dp"/>
+ </LinearLayout>
+</LinearLayout>

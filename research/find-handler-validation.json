@@ -1,0 +1,88 @@
+{
+  "firmware_sha256": "20f5f148be6f346677422679e78a251219a72ac9501ad959a01783fa8439df9f",
+  "checks": 27,
+  "wire_setter": [
+    16,
+    137
+  ],
+  "wire_getter": [
+    16,
+    9
+  ],
+  "body": "two enable flags; local side0 selects first, side1 second",
+  "cases": [
+    {
+      "left": 0,
+      "right": 0,
+      "master": false,
+      "local_flags": []
+    },
+    {
+      "left": 0,
+      "right": 0,
+      "master": true,
+      "local_flags": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "left": 1,
+      "right": 0,
+      "master": false,
+      "local_flags": []
+    },
+    {
+      "left": 1,
+      "right": 0,
+      "master": true,
+      "local_flags": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "left": 0,
+      "right": 1,
+      "master": false,
+      "local_flags": []
+    },
+    {
+      "left": 0,
+      "right": 1,
+      "master": true,
+      "local_flags": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "left": 1,
+      "right": 1,
+      "master": false,
+      "local_flags": []
+    },
+    {
+      "left": 1,
+      "right": 1,
+      "master": true,
+      "local_flags": [
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "actual_stock_callback_executed": true,
+  "audio_tws_and_timer_effects": "modeled, not emulated",
+  "bounded_native_timeout_verified": false,
+  "physical_test": false,
+  "limitations": "ACK can succeed without action when mobile-master gate refuses; getter returns zeros in examined stub; no physical/radio or disconnect verification"
+}

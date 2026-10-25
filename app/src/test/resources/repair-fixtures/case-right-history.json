@@ -1,0 +1,1165 @@
+{
+  "description": "Sanitized numeric case-study fixture for the original device-specific test; no device identifiers.",
+  "reads": [
+    {},
+    {
+      "result": {
+        "ear": "R",
+        "replyBytes": 2658,
+        "rawMainCounter": 3,
+        "rawIndex": 18,
+        "error1": 12,
+        "error2": 3,
+        "error3": 0,
+        "normalCount": 26,
+        "recordValid": true,
+        "mainVoltageLimitFaultCounter": 3,
+        "index": 18,
+        "diagnosticFormat": "compact-history-1.13",
+        "historyComplete": true,
+        "storedHistory": [
+          {
+            "slot": 0,
+            "rawChargeTime": 1019707,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 2821266,
+                "rawVoltage": 4040
+              },
+              {
+                "slot": 1,
+                "rawTime": 3120437,
+                "rawVoltage": 4040
+              },
+              {
+                "slot": 2,
+                "rawTime": 3420584,
+                "rawVoltage": 4036
+              },
+              {
+                "slot": 3,
+                "rawTime": 3719762,
+                "rawVoltage": 4036
+              },
+              {
+                "slot": 4,
+                "rawTime": 4019918,
+                "rawVoltage": 4032
+              },
+              {
+                "slot": 5,
+                "rawTime": 4320059,
+                "rawVoltage": 4032
+              },
+              {
+                "slot": 6,
+                "rawTime": 4620219,
+                "rawVoltage": 4032
+              },
+              {
+                "slot": 7,
+                "rawTime": 4920387,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 1,
+            "rawChargeTime": 4808970,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6610941,
+                "rawVoltage": 4032
+              },
+              {
+                "slot": 1,
+                "rawTime": 6909098,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 2,
+                "rawTime": 7209286,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 3,
+                "rawTime": 7509447,
+                "rawVoltage": 4024
+              },
+              {
+                "slot": 4,
+                "rawTime": 7809660,
+                "rawVoltage": 4020
+              },
+              {
+                "slot": 5,
+                "rawTime": 8109854,
+                "rawVoltage": 4020
+              },
+              {
+                "slot": 6,
+                "rawTime": 8409045,
+                "rawVoltage": 4016
+              },
+              {
+                "slot": 7,
+                "rawTime": 8709244,
+                "rawVoltage": 4016
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 2,
+            "rawChargeTime": 4749444,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6551261,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 1,
+                "rawTime": 6850286,
+                "rawVoltage": 3976
+              },
+              {
+                "slot": 2,
+                "rawTime": 7150275,
+                "rawVoltage": 3968
+              },
+              {
+                "slot": 3,
+                "rawTime": 7450260,
+                "rawVoltage": 3964
+              },
+              {
+                "slot": 4,
+                "rawTime": 7750257,
+                "rawVoltage": 3960
+              },
+              {
+                "slot": 5,
+                "rawTime": 8050258,
+                "rawVoltage": 3956
+              },
+              {
+                "slot": 6,
+                "rawTime": 8350282,
+                "rawVoltage": 3952
+              },
+              {
+                "slot": 7,
+                "rawTime": 8650314,
+                "rawVoltage": 3948
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 3,
+            "rawChargeTime": 4645825,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6447486,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 1,
+                "rawTime": 6746562,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 2,
+                "rawTime": 7046707,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 3,
+                "rawTime": 7345855,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 4,
+                "rawTime": 7645969,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 5,
+                "rawTime": 7946112,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 6,
+                "rawTime": 8246227,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 7,
+                "rawTime": 8546382,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 4,
+            "rawChargeTime": 42055448,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 43857245,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 1,
+                "rawTime": 44156428,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 2,
+                "rawTime": 44455601,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 3,
+                "rawTime": 44755748,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 4,
+                "rawTime": 45055881,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 5,
+                "rawTime": 45356045,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 6,
+                "rawTime": 45656199,
+                "rawVoltage": 3976
+              },
+              {
+                "slot": 7,
+                "rawTime": 45956336,
+                "rawVoltage": 3972
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 5,
+            "rawChargeTime": 12334499,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 14135553,
+                "rawVoltage": 4016
+              },
+              {
+                "slot": 1,
+                "rawTime": 14434952,
+                "rawVoltage": 4012
+              },
+              {
+                "slot": 2,
+                "rawTime": 14735354,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 3,
+                "rawTime": 15034749,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 4,
+                "rawTime": 15335174,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 5,
+                "rawTime": 15634571,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 6,
+                "rawTime": 15934923,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 7,
+                "rawTime": 16235354,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 6,
+            "rawChargeTime": 4513564,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6315235,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 1,
+                "rawTime": 6614422,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 2,
+                "rawTime": 6914562,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 3,
+                "rawTime": 7213717,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 4,
+                "rawTime": 7513872,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 5,
+                "rawTime": 7814007,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 6,
+                "rawTime": 8114141,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 7,
+                "rawTime": 8414227,
+                "rawVoltage": 3976
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 7,
+            "rawChargeTime": 460333,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 2262066,
+                "rawVoltage": 4036
+              },
+              {
+                "slot": 1,
+                "rawTime": 2560516,
+                "rawVoltage": 4036
+              },
+              {
+                "slot": 2,
+                "rawTime": 2860973,
+                "rawVoltage": 4036
+              },
+              {
+                "slot": 3,
+                "rawTime": 3160425,
+                "rawVoltage": 4032
+              },
+              {
+                "slot": 4,
+                "rawTime": 3460897,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 5,
+                "rawTime": 3760336,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 6,
+                "rawTime": 4060823,
+                "rawVoltage": 4028
+              },
+              {
+                "slot": 7,
+                "rawTime": 4361291,
+                "rawVoltage": 4024
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 8,
+            "rawChargeTime": 5357558,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 7158703,
+                "rawVoltage": 4012
+              },
+              {
+                "slot": 1,
+                "rawTime": 7458094,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 2,
+                "rawTime": 7758482,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 3,
+                "rawTime": 8057902,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 4,
+                "rawTime": 8358274,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 5,
+                "rawTime": 8657694,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 6,
+                "rawTime": 8958096,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 7,
+                "rawTime": 9258506,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 9,
+            "rawChargeTime": 209202,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 2011118,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 1,
+                "rawTime": 2309217,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 2,
+                "rawTime": 2609377,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 3,
+                "rawTime": 2909517,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 4,
+                "rawTime": 3209670,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 5,
+                "rawTime": 3509800,
+                "rawVoltage": 3995
+              },
+              {
+                "slot": 6,
+                "rawTime": 3809945,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 7,
+                "rawTime": 4110103,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 10,
+            "rawChargeTime": 49126424,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 50928115,
+                "rawVoltage": 4020
+              },
+              {
+                "slot": 1,
+                "rawTime": 51227400,
+                "rawVoltage": 4016
+              },
+              {
+                "slot": 2,
+                "rawTime": 51526750,
+                "rawVoltage": 4012
+              },
+              {
+                "slot": 3,
+                "rawTime": 51827055,
+                "rawVoltage": 4012
+              },
+              {
+                "slot": 4,
+                "rawTime": 52127359,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 5,
+                "rawTime": 52426622,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 6,
+                "rawTime": 52726960,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 7,
+                "rawTime": 53027280,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 11,
+            "rawChargeTime": 4579558,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6381507,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 1,
+                "rawTime": 6679715,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 2,
+                "rawTime": 6979912,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 3,
+                "rawTime": 7280083,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 4,
+                "rawTime": 7580263,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 5,
+                "rawTime": 7880457,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 6,
+                "rawTime": 8179661,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 7,
+                "rawTime": 8479841,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 12,
+            "rawChargeTime": 34812512,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 36614049,
+                "rawVoltage": 4007
+              },
+              {
+                "slot": 1,
+                "rawTime": 36913401,
+                "rawVoltage": 4003
+              },
+              {
+                "slot": 2,
+                "rawTime": 37212776,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 3,
+                "rawTime": 37513182,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 4,
+                "rawTime": 37812549,
+                "rawVoltage": 3993
+              },
+              {
+                "slot": 5,
+                "rawTime": 38112961,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 6,
+                "rawTime": 38413381,
+                "rawVoltage": 3989
+              },
+              {
+                "slot": 7,
+                "rawTime": 38712743,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 13,
+            "rawChargeTime": 4481688,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6283402,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 1,
+                "rawTime": 6582585,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 2,
+                "rawTime": 6881742,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 3,
+                "rawTime": 7181886,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 4,
+                "rawTime": 7482001,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 5,
+                "rawTime": 7782151,
+                "rawVoltage": 3976
+              },
+              {
+                "slot": 6,
+                "rawTime": 8082284,
+                "rawVoltage": 3976
+              },
+              {
+                "slot": 7,
+                "rawTime": 8382439,
+                "rawVoltage": 3972
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 14,
+            "rawChargeTime": 50025251,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 51826789,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 1,
+                "rawTime": 52125948,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 2,
+                "rawTime": 52426199,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 3,
+                "rawTime": 52725404,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 4,
+                "rawTime": 53025587,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 5,
+                "rawTime": 53325843,
+                "rawVoltage": 3987
+              },
+              {
+                "slot": 6,
+                "rawTime": 53626032,
+                "rawVoltage": 3983
+              },
+              {
+                "slot": 7,
+                "rawTime": 53925253,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 15,
+            "rawChargeTime": 12823,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 1814723,
+                "rawVoltage": 4076
+              },
+              {
+                "slot": 1,
+                "rawTime": 2112913,
+                "rawVoltage": 4076
+              },
+              {
+                "slot": 2,
+                "rawTime": 2413067,
+                "rawVoltage": 4072
+              },
+              {
+                "slot": 3,
+                "rawTime": 2713258,
+                "rawVoltage": 4072
+              },
+              {
+                "slot": 4,
+                "rawTime": 3013438,
+                "rawVoltage": 4072
+              },
+              {
+                "slot": 5,
+                "rawTime": 3313583,
+                "rawVoltage": 4068
+              },
+              {
+                "slot": 6,
+                "rawTime": 3613777,
+                "rawVoltage": 4068
+              },
+              {
+                "slot": 7,
+                "rawTime": 3912960,
+                "rawVoltage": 4064
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 16,
+            "rawChargeTime": 58585,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 1860502,
+                "rawVoltage": 4060
+              },
+              {
+                "slot": 1,
+                "rawTime": 2158907,
+                "rawVoltage": 4060
+              },
+              {
+                "slot": 2,
+                "rawTime": 2459284,
+                "rawVoltage": 4060
+              },
+              {
+                "slot": 3,
+                "rawTime": 2758704,
+                "rawVoltage": 4056
+              },
+              {
+                "slot": 4,
+                "rawTime": 3059074,
+                "rawVoltage": 4056
+              },
+              {
+                "slot": 5,
+                "rawTime": 3359416,
+                "rawVoltage": 4056
+              },
+              {
+                "slot": 6,
+                "rawTime": 3658761,
+                "rawVoltage": 4052
+              },
+              {
+                "slot": 7,
+                "rawTime": 3959139,
+                "rawVoltage": 4052
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 17,
+            "rawChargeTime": 50715887,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 52517777,
+                "rawVoltage": 3990
+              },
+              {
+                "slot": 1,
+                "rawTime": 52816606,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 2,
+                "rawTime": 53116395,
+                "rawVoltage": 3979
+              },
+              {
+                "slot": 3,
+                "rawTime": 53416027,
+                "rawVoltage": 3972
+              },
+              {
+                "slot": 4,
+                "rawTime": 53715948,
+                "rawVoltage": 3968
+              },
+              {
+                "slot": 5,
+                "rawTime": 54016770,
+                "rawVoltage": 3964
+              },
+              {
+                "slot": 6,
+                "rawTime": 54316600,
+                "rawVoltage": 3960
+              },
+              {
+                "slot": 7,
+                "rawTime": 54616422,
+                "rawVoltage": 3956
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 18,
+            "rawChargeTime": 4633618,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 6435348,
+                "rawVoltage": 4012
+              },
+              {
+                "slot": 1,
+                "rawTime": 6734525,
+                "rawVoltage": 4008
+              },
+              {
+                "slot": 2,
+                "rawTime": 7033633,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 3,
+                "rawTime": 7333791,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 4,
+                "rawTime": 7633927,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 5,
+                "rawTime": 7934096,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 6,
+                "rawTime": 8234249,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 7,
+                "rawTime": 8534385,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          },
+          {
+            "slot": 19,
+            "rawChargeTime": 32213982,
+            "recordMarkedEmpty": false,
+            "storedSamples": [
+              {
+                "slot": 0,
+                "rawTime": 34015593,
+                "rawVoltage": 4004
+              },
+              {
+                "slot": 1,
+                "rawTime": 34314011,
+                "rawVoltage": 4000
+              },
+              {
+                "slot": 2,
+                "rawTime": 34614423,
+                "rawVoltage": 3996
+              },
+              {
+                "slot": 3,
+                "rawTime": 34914843,
+                "rawVoltage": 3992
+              },
+              {
+                "slot": 4,
+                "rawTime": 35214280,
+                "rawVoltage": 3988
+              },
+              {
+                "slot": 5,
+                "rawTime": 35514731,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 6,
+                "rawTime": 35814132,
+                "rawVoltage": 3984
+              },
+              {
+                "slot": 7,
+                "rawTime": 36114581,
+                "rawVoltage": 3980
+              },
+              {
+                "slot": 8,
+                "rawTime": 0,
+                "rawVoltage": 0
+              },
+              {
+                "slot": 9,
+                "rawTime": 0,
+                "rawVoltage": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
