@@ -1,0 +1,43 @@
+name: Publish signed APK
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'artifacts/**'
+      - '.github/workflows/release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: signed-apk-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify prepared APK
+        working-directory: artifacts
+        run: sha256sum --check SHA256SUMS
+      - name: Publish release and attach APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: v0.4.7-preview
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" artifacts/a20-companion-0.4.7-preview.apk artifacts/SHA256SUMS --clobber
+          else
+            gh release create "$TAG" \
+              --target "$GITHUB_SHA" \
+              --title 'A20 Companion 0.4.7 Preview' \
+              --notes-file artifacts/RELEASE_NOTES.md \
+              --latest \
+              artifacts/a20-companion-0.4.7-preview.apk artifacts/SHA256SUMS
+          fi

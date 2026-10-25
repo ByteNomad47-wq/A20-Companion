@@ -57,7 +57,8 @@ With those variables set, `./gradlew :app:assembleRelease` creates
 updates. Keep private signing material outside this repository.
 
 CI builds/tests/lints an unsigned release and uploads it as a workflow artifact.
-CI never gets the local preview signing key and does not publish releases.
+CI never gets the private signing key. A separate release workflow verifies the committed,
+already signed APK checksum and publishes it with GitHub’s built-in token.
 
 ## Current validation boundaries
 

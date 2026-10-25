@@ -6,7 +6,7 @@ or root required.
 
 ## Download
 
-[Get the latest release](https://github.com/ByteNomad47-wq/A20-Companion/releases/latest)
+[Get the latest release](https://github.com/ByteNomad47-wq/A20-Companion/releases/latest) · [APK checksum](artifacts/SHA256SUMS)
 
 
 Requires **Android 12+**. Device controls target **A6611 firmware 01.57**.
