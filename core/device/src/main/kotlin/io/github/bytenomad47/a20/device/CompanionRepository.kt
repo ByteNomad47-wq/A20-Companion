@@ -323,6 +323,45 @@ class CompanionRepository(
         }
     }
 
+    /** Explicit foreground read; no clear, tracking toggle, clock write or screen-off polling. */
+    suspend fun <T> withSleepHistory(
+        block: suspend (String, Map<SleepRecordKind, List<SleepSourceRecords>>) -> T
+    ): T {
+        initialized.await()
+        check(!findPending) { "Stop Find earbuds before reading sleep history." }
+        check(actionMutex.tryLock()) {
+            "Another A20 action is running. Try again when it finishes."
+        }
+        try {
+            val selected = settings.value.address ?: error("Choose your A20 first.")
+            update { it.copy(busy = true, message = "Reading sleep history…") }
+            transport?.close()
+            val gateway = gatewayOverride ?: transport ?: error("Bluetooth unavailable")
+            val result =
+                withTimeout(20_000) {
+                    val fresh = gateway.readState()
+                    accept(fresh)
+                    check(ModeCapability.supportsModeControl(fresh)) {
+                        "Sleep history requires A6611 firmware 01.57."
+                    }
+                    val expected = if (fresh.peerLinked == true) 2 else 1
+                    SleepRecordKind.entries.associateWith {
+                        update { state ->
+                            state.copy(message = "Reading sleep ${it.name.lowercase()}…")
+                        }
+                        gateway.readSleepRecords(it, expected)
+                    }
+                }
+            check(settings.value.address == selected) { "Selected device changed." }
+            return block(selected, result)
+        } finally {
+            transport?.close()
+            update { it.copy(busy = false) }
+            release()
+            actionMutex.unlock()
+        }
+    }
+
     /** Shares the normal action lock. Repair never competes with a widget or Ready mode. */
     suspend fun <T> withRepairLease(block: suspend (String, DeviceSnapshot) -> T): T {
         initialized.await()

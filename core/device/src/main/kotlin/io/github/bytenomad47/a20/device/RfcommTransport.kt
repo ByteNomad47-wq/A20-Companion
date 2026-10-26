@@ -125,6 +125,38 @@ class RfcommTransport(
         }
     }
 
+    override suspend fun readSleepRecords(
+        kind: SleepRecordKind,
+        expectedSources: Int,
+    ): List<SleepSourceRecords> = requestMutex.withLock {
+        if (lastSnapshot?.let(ModeCapability::supportsModeControl) != true)
+            throw ProtocolException("Sleep history requires A6611 firmware 01.57")
+        val selected =
+            socket?.takeIf { it.isConnected } ?: throw IOException("Control socket unavailable")
+        val collector = SleepRecordCollector(kind, expectedSources)
+        coroutineScope {
+            val response =
+                async(start = CoroutineStart.UNDISPATCHED) {
+                    packets
+                        .map { it.getOrThrow() }
+                        .first {
+                            it.command == kind.command && collector.accept(it)
+                        }
+                }
+            try {
+                socketOperation(selected) {
+                    selected.outputStream.write(SleepHistoryProtocol.request(kind))
+                    selected.outputStream.flush()
+                }
+                // A linked peer may be unavailable. Only complete sources may be retained.
+                withTimeoutOrNull(6_000) { response.await() }
+                collector.finish()
+            } finally {
+                response.cancel()
+            }
+        }
+    }
+
     /** Cancellation closes the descriptor; interrupting a Java thread alone is insufficient. */
     private suspend fun socketOperation(selected: BluetoothSocket, operation: () -> Unit) =
         suspendCancellableCoroutine<Unit> { continuation ->

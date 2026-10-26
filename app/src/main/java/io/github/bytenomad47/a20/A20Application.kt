@@ -20,6 +20,9 @@ class A20Application : Application() {
     internal lateinit var find: io.github.bytenomad47.a20.find.FindSession
         private set
 
+    internal lateinit var sleepHistory: io.github.bytenomad47.a20.sleep.SleepHistoryController
+        private set
+
     override fun onCreate() {
         super.onCreate()
         repository =
@@ -27,6 +30,7 @@ class A20Application : Application() {
                 this,
                 appVersion = BuildConfig.VERSION_NAME,
             )
+        sleepHistory = io.github.bytenomad47.a20.sleep.SleepHistoryController(this, repository)
         repair = io.github.bytenomad47.a20.repair.RepairController(this, repository)
         find = io.github.bytenomad47.a20.find.createFindSession(this, repository)
         Notifications.channels(this)
@@ -44,8 +48,8 @@ class A20Application : Application() {
                             )
                         if (
                             runCatching {
-                                    device?.address?.let { it == repository.settings.value.address }
-                                }
+                                device?.address?.let { it == repository.settings.value.address }
+                            }
                                 .getOrNull() == true
                         )
                             find.reconnect()
@@ -54,9 +58,7 @@ class A20Application : Application() {
                         intent.action == Intent.ACTION_TIME_CHANGED ||
                             intent.action == Intent.ACTION_TIMEZONE_CHANGED
                     ) {
-                        io.github.bytenomad47.a20.widgets.WidgetUpdates.refresh(
-                            this@A20Application
-                        )
+                        io.github.bytenomad47.a20.widgets.WidgetUpdates.refresh(this@A20Application)
                         return
                     }
                     if (intent.action == BluetoothAdapter.ACTION_STATE_CHANGED) {

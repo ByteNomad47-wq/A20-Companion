@@ -40,6 +40,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 
 enum class Page {
+    SLEEP_HISTORY,
     HOME,
     SETTINGS,
     REPAIR,
@@ -62,6 +63,7 @@ fun A20App(
     onAddControlsWidget: () -> Unit = {},
     repairContent: (@Composable (() -> Unit) -> Unit)? = null,
     initialPage: Page = Page.HOME,
+    onSleepExport: (String) -> Unit = {},
     dialogs: @Composable () -> Unit = {},
 ) {
     val state by repository.state.collectAsStateWithLifecycle()
@@ -97,6 +99,7 @@ fun A20App(
                         onBatterySettings,
                         { page = Page.REPAIR },
                         { page = Page.HOME },
+                        onSleepHistory = { page = Page.SLEEP_HISTORY },
                         onAddTile = onAddTile,
                         onAddBatteryWidget = onAddBatteryWidget,
                         onAddControlsWidget = onAddControlsWidget,
@@ -107,6 +110,16 @@ fun A20App(
                         onBack = { page = Page.HOME },
                         session = (context.applicationContext as? A20Application)?.find,
                     )
+                Page.SLEEP_HISTORY ->
+                    (context.applicationContext as? A20Application)?.sleepHistory?.let {
+                        SleepHistoryPage(
+                            it,
+                            state.selectedName,
+                            state.busy,
+                            { page = Page.SETTINGS },
+                            onSleepExport,
+                        )
+                    }
                 Page.REPAIR ->
                     if (repairContent != null) repairContent { page = Page.SETTINGS }
                     else Text("Charging repair is unavailable in this view.")
@@ -115,7 +128,7 @@ fun A20App(
         dialogs()
     }
     androidx.activity.compose.BackHandler(enabled = page != Page.HOME) {
-        page = if (page == Page.REPAIR) Page.SETTINGS else Page.HOME
+        page = if (page == Page.REPAIR || page == Page.SLEEP_HISTORY) Page.SETTINGS else Page.HOME
     }
 }
 
@@ -471,6 +484,7 @@ internal fun SettingsPage(
     onBatterySettings: () -> Unit,
     onRepair: () -> Unit,
     onBack: () -> Unit,
+    onSleepHistory: () -> Unit = {},
     onAddTile: () -> Unit = {},
     onAddBatteryWidget: () -> Unit = {},
     onAddControlsWidget: () -> Unit = {},
@@ -539,6 +553,9 @@ internal fun SettingsPage(
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
+        }
+        FilledTonalButton(onClick = onSleepHistory, modifier = Modifier.fillMaxWidth()) {
+            Text("Sleep history · Preview")
         }
         OutlinedButton(onClick = onRepair, modifier = Modifier.fillMaxWidth()) {
             Text("Charging repair · Experimental")

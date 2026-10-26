@@ -72,6 +72,12 @@ zero main counter or battery health. Advanced contains optional count checking
 or external reset endpoint is included. Read [the procedure and limits](REPAIR.md)
 before using it.
 
+## Sleep history preview
+
+Settings → Sleep history imports saved earbud event and summary records locally.
+Nightly charts and stage labels are pending real-device validation. See
+[Sleep history](SLEEP_HISTORY.md) for syncing, privacy and first-capture instructions.
+
 ## Developer documentation
 
 [Build and signing](BUILD.md) · [Architecture and power policy](ARCHITECTURE.md) ·

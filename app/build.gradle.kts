@@ -11,8 +11,8 @@ android {
         applicationId = "io.github.bytenomad47.a20"
         minSdk = 31
         targetSdk = 37
-        versionCode = 18
-        versionName = "0.4.7-preview"
+        versionCode = 19
+        versionName = "0.5.0-sleep-preview"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     testOptions {

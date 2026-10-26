@@ -16,6 +16,13 @@ interface DeviceGateway {
 
     suspend fun readState(): DeviceSnapshot
 
+    suspend fun readSleepRecords(
+        kind: SleepRecordKind,
+        expectedSources: Int,
+    ): List<SleepSourceRecords> {
+        throw ProtocolException("Sleep history unsupported")
+    }
+
     suspend fun setFind(left: Boolean, right: Boolean) {
         throw ProtocolException("Find unsupported")
     }

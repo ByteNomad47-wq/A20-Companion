@@ -75,3 +75,13 @@ Home or backgrounding releases it. Playback-only events do not refresh battery
 receipt times. There is no periodic Bluetooth playback poll in the background.
 Bluetooth mode observes Android music activity using the foreground volume loop;
 it does not request notification access or read another app's track metadata.
+
+## Sleep history preview
+
+Explicit foreground sleep-history sync saves up to 3,000 unique records per pair
+in private app storage. A hashed local pair identifier isolates archives. Sleep
+records and import times can be personal information; the optional separate sleep
+export contains those records, without names, Bluetooth addresses or serials.
+Nothing uploads automatically. Local archives survive forgetting a pair and can
+be removed in Sleep history → Sync details → Delete local sleep history, or by
+clearing app storage. Reads do not erase earbud records or change tracking settings.

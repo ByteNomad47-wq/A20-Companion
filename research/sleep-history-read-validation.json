@@ -1,0 +1,218 @@
+{
+  "firmware_sha256": "20f5f148be6f346677422679e78a251219a72ac9501ad959a01783fa8439df9f",
+  "checks": 140,
+  "cases": [
+    {
+      "internal_command": 38,
+      "ear": 0,
+      "count": 0,
+      "chunks": 1,
+      "lengths": [
+        4
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 0,
+      "count": 1,
+      "chunks": 1,
+      "lengths": [
+        10
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 0,
+      "count": 25,
+      "chunks": 1,
+      "lengths": [
+        154
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 0,
+      "count": 26,
+      "chunks": 2,
+      "lengths": [
+        154,
+        10
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 0,
+      "count": 100,
+      "chunks": 4,
+      "lengths": [
+        154,
+        154,
+        154,
+        154
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 1,
+      "count": 0,
+      "chunks": 1,
+      "lengths": [
+        4
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 1,
+      "count": 1,
+      "chunks": 1,
+      "lengths": [
+        10
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 1,
+      "count": 25,
+      "chunks": 1,
+      "lengths": [
+        154
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 1,
+      "count": 26,
+      "chunks": 2,
+      "lengths": [
+        154,
+        10
+      ]
+    },
+    {
+      "internal_command": 38,
+      "ear": 1,
+      "count": 100,
+      "chunks": 4,
+      "lengths": [
+        154,
+        154,
+        154,
+        154
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 0,
+      "count": 0,
+      "chunks": 1,
+      "lengths": [
+        4
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 0,
+      "count": 1,
+      "chunks": 1,
+      "lengths": [
+        18
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 0,
+      "count": 10,
+      "chunks": 1,
+      "lengths": [
+        144
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 0,
+      "count": 11,
+      "chunks": 2,
+      "lengths": [
+        144,
+        18
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 0,
+      "count": 50,
+      "chunks": 5,
+      "lengths": [
+        144,
+        144,
+        144,
+        144,
+        144
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 1,
+      "count": 0,
+      "chunks": 1,
+      "lengths": [
+        4
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 1,
+      "count": 1,
+      "chunks": 1,
+      "lengths": [
+        18
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 1,
+      "count": 10,
+      "chunks": 1,
+      "lengths": [
+        144
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 1,
+      "count": 11,
+      "chunks": 2,
+      "lengths": [
+        144,
+        18
+      ]
+    },
+    {
+      "internal_command": 45,
+      "ear": 1,
+      "count": 50,
+      "chunks": 5,
+      "lengths": [
+        144,
+        144,
+        144,
+        144,
+        144
+      ]
+    }
+  ],
+  "actual_stock_callbacks_executed": true,
+  "helpers_modeled": [
+    "logger",
+    "master predicate",
+    "peer read requests",
+    "normal response send"
+  ],
+  "record_regions_unchanged": true,
+  "limitations": [
+    "No radio/real device capture",
+    "Peer read forwarding effects not emulated",
+    "Timestamp epoch and record field meanings not yet qualified",
+    "No clear/enable/time-write commands sent"
+  ]
+}

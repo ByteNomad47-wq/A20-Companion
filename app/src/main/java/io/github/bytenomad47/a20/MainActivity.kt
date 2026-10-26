@@ -95,6 +95,28 @@ class MainActivity : ComponentActivity() {
                 }
         }
 
+    private var sleepExport: String? = null
+    private val saveSleepReport =
+        registerForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri
+            ->
+            val text = sleepExport
+            sleepExport = null
+            if (uri != null && text != null)
+                lifecycleScope.launch(Dispatchers.IO) {
+                    val success = runCatching {
+                        contentResolver.openOutputStream(uri)?.use { it.write(text.toByteArray()) }
+                            ?: error("No output stream")
+                    }
+                        .isSuccess
+                    withContext(Dispatchers.Main) {
+                        message(
+                            if (success) "Sleep report exported."
+                            else "Could not export sleep report. Try again."
+                        )
+                    }
+                }
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Older pinned shortcuts may still target MainActivity until the launcher refreshes.
@@ -149,6 +171,10 @@ class MainActivity : ComponentActivity() {
                             saveRepairReport.launch("a20-charging-report.json")
                         },
                     )
+                },
+                onSleepExport = { text ->
+                    sleepExport = text
+                    saveSleepReport.launch("a20-sleep-report.json")
                 },
                 dialogs = {
                     DeviceDialogs(
