@@ -1,0 +1,38 @@
+name: Publish experimental Reset Lab
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'experimental-reset/**'
+      - '.github/workflows/reset-lab-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify prepared assets
+        working-directory: experimental-reset
+        run: sha256sum --check SHA256SUMS
+      - name: Publish experimental prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG: reset-lab-v1.0.0
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" experimental-reset/a20-reset-lab-1.0.0.apk experimental-reset/a20-reset-lab-1.0.0-source.zip experimental-reset/SHA256SUMS --clobber
+          else
+            gh release create "$TAG" --target "$GITHUB_SHA" --prerelease \
+              --title 'A20 Reset Lab 1.0.0 — experimental' \
+              --notes-file experimental-reset/README.md \
+              experimental-reset/a20-reset-lab-1.0.0.apk experimental-reset/a20-reset-lab-1.0.0-source.zip experimental-reset/SHA256SUMS
+          fi

@@ -44,3 +44,7 @@ to cancel it. Charging repair is experimental and requires a separate confirmati
 Independent software, not affiliated with Anker or Soundcore. Source code is
 [GPL-3.0-only](LICENSE); product images have separate rights described in
 [third-party notices](THIRD_PARTY.md).
+
+## Experimental Reset Lab
+
+A separate app allows an explicitly confirmed reset experiment without the firmware-version gate. **01.58 behavior is unverified; 01.50 is unsupported.** Read the [scope, instructions and download links](experimental-reset/README.md) before testing.

@@ -1,0 +1,20 @@
+{
+  "package": "io.github.bytenomad47.a20.resetlab",
+  "version": "1.0.0-reset-lab",
+  "versionCode": 1,
+  "certificateSha256": "7e8504a7789fa099d2b910dc19b7b83589f13f75d770391f4ade77e2ab1db19e",
+  "apkBytes": 4049261,
+  "apkSha256": "d0fadb7b91290f040e02e3e3d5edf595bd1c61b7618275296b9130cab5c0d8a3",
+  "unitTests": 33,
+  "testFailures": 0,
+  "testErrors": 0,
+  "lintPassed": true,
+  "signatureVerified": true,
+  "privateIdentifiersScanPassed": true,
+  "correspondingSourceIncluded": true,
+  "sourceSha256": "d82e101c02d79c2e018188e44b83c0501a580a5b0630448a325ff0c6f5ea595a",
+  "noInternetPermission": true,
+  "manualResetFirmwareVersionGate": false,
+  "physicalFirmware158CompatibilityVerified": false,
+  "official150InterfaceSupported": false
+}
